@@ -1,0 +1,46 @@
+HTML:
+
+1. Structure
+2. Elements
+3. Attributes
+4. Block & inline
+5. Div
+6. Classes
+7. id
+8. difference between class and id
+9. Form
+10. Form Attributes
+11. Form Elements
+12. tables
+
+CSS: 
+
+1. selector
+2. syntax
+3. comment
+4. background
+5. margins & paddings
+6. Text (Font etc)
+7. nav bar
+
+JAVASCRIPT:
+
+1. variables
+2. operators
+3. commands
+4. internal script
+5. external script
+6. let vs const
+7. data types
+8. functions
+9. objects
+10. events
+11. array
+12. conditions
+13. JSON
+14. classes
+15. DOM
+16. 
+
+
+

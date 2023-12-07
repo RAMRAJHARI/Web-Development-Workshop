@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Home</title>
+    <link rel="stylesheet" type="text/css" href="../css/ContactMe.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../image/header.png" />
+      <nav>
+        <ul>
+          <li><a href="./PortfolioHome.html">Home</a></li>
+          <li><a href="./AboutPage.html">About</a></li>
+          <li><a href="./ContactPage.html" class="active">Contact Me</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/ramraj-r-j-3b7b03184"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contact-form">
+      <p id="success"></p>
+      <form class="form">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder=" Name"
+            name="name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder=" Email"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder=" Phone Number"
+            name="phone"
+          />
+        </div>
+        <button
+          id="submit"
+          type="submit"
+          class="btn btn-default"
+          onclick="submitBtn()"
+        >
+          Submit
+        </button>
+      </form>
+      <div class="error"><p id="error_para"></p></div>
+    </div>
+    <script>
+      function submitBtn() {
+        if (
+          document.getElementById("name") ||
+          document.getElementById("email") ||
+          document.getElementById("phone") == ""
+        ) {
+          document.getElementById("error_para").innerHTML = "Fill all Fields";
+          return false;
+        } else {
+          formgroup.style.display = "none";
+          document.getElementById("success").innerHTML =
+            "Thank you for contacting !!";
+          return true;
+        }
+      }
+    </script>
+    <footer class="footer">
+      <div id="footer_div">
+        <p>&COPY;All Copyrights reserved 2023.</p>
+        <img src="../image/icons/mail.png" id="mail_icon" />
+        <a href="mailto:ramajrj98@gmail.com" id="mail">ramajrj98@gmail.com</a>
+      </div>
+    </footer>
+  </body>
+</html>

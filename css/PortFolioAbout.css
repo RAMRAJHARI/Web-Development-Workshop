@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  background-color: #ebe9dd;
+}
+ul {
+  list-style-type: none;
+  float: right;
+}
+li {
+  display: inline;
+  margin: 10px;
+}
+header img {
+  width: auto;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+ul a {
+  text-decoration: none;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  padding: 14px 16px;
+}
+ul a:hover {
+  color: black;
+  transition: 200ms linear 50ms;
+  background-color: white;
+  border-radius: 50px;
+  border: 1px;
+  background-size: 50px;
+}
+
+a.active {
+  background-color: #d9ead3;
+  color: #8a531a;
+  border-radius: 50px;
+}
+.footer {
+  text-align: center;
+  background-color: #dda972;
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  color: white;
+}
+
+#mail {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  text-shadow: 0px 1px 1px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mail_icon {
+  position: relative;
+  top: 5px;
+  height: 20px;
+  right: 8px;
+}
+#footer_div {
+  padding-top: 20px;
+}
+.about_img {
+  flex: 33.33%;
+  padding: 5px;
+  object-fit: fill;
+}
+#about_para {
+  flex: 33.33%;
+  padding: 5px;
+  font-size: 30px;
+}
+.about_div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-button {
+  background-color: transparent;
+  border: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 32px;
+  float: left;
+  line-height: 70px;
+  display: none;
+}
+
+@media screen and (max-width: 740px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  .my-button {
+    display: block;
+  }
+  nav {
+    background-color: rgb(62, 109, 149);
+  }
+  .intro_head {
+    font-size: 20px;
+  }
+  #hirebtn {
+    margin: auto;
+    display: block;
+  }
+  .about_div {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+  }
+  .about_img {
+    flex: 33.33%;
+    padding: 5px;
+    width: 20px;
+  }
+  #about_para {
+    flex: 33.33%;
+    padding: 5px;
+    font-size: 20px;
+  }
+}

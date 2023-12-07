@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  background-color: #ebe9dd;
+}
+ul {
+  list-style-type: none;
+  float: right;
+}
+li {
+  display: inline;
+  margin: 10px;
+}
+header img {
+  width: auto;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+ul a {
+  text-decoration: none;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  padding: 14px 16px;
+}
+ul a:hover {
+  color: black;
+  transition: 200ms linear 50ms;
+  background-color: white;
+  border-radius: 50px;
+  border: 1px;
+  background-size: 50px;
+}
+
+a.active {
+  background-color: #d9ead3;
+  color: #8a531a;
+  border-radius: 50px;
+}
+.intro_head {
+  font-size: 150px;
+}
+.name_class {
+  color: #8a531a;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.name_class:hover {
+  color: #8a531a;
+  cursor: pointer;
+  border-radius: 50px;
+  animation-name: example;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+.greeting {
+  font-size: 50px;
+}
+@keyframes example {
+  from {
+    color: black;
+  }
+  to {
+    color: #8a531a;
+  }
+}
+.intro {
+  display: block;
+  text-align: center;
+  padding: 100px;
+}
+.intro_para {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+#hirebtn {
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: bisque;
+  color: #8a531a;
+  font-weight: bold;
+  animation-name: hirebutton;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+}
+@keyframes hirebutton {
+  from {
+    color: black;
+  }
+  to {
+    color: #8a531a;
+  }
+}
+#resume_forward {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.footer {
+  text-align: center;
+  background-color: #dda972;
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  color: white;
+}
+
+#mail {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  text-shadow: 0px 1px 1px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mail_icon {
+  position: relative;
+  top: 5px;
+  height: 20px;
+  right: 8px;
+}
+#footer_div {
+  padding-top: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8a531a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ad8f6f;
+}
+.my-button {
+  background-color: transparent;
+  border: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 32px;
+  float: left;
+  line-height: 70px;
+  display: none;
+}
+
+.my-button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 740px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  ul li {
+    width: 100%;
+  }
+  .my-button {
+    display: block;
+  }
+  nav {
+    background-color: rgb(62, 109, 149);
+  }
+  .intro_head {
+    font-size: 20px;
+  }
+  #hirebtn {
+    margin: auto;
+    display: block;
+  }
+}
